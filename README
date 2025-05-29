@@ -1,3 +1,19 @@
-1. cd to spotifeels/backend
-2. C:\..\spotifeels\backend> node server.js
-3. navigate to http://localhost:8000
+# Spotify Nostalgia Study
+
+A web application for music recommendation research conducted at USC Brain and Music Lab.
+
+## Features
+- Song validation via Spotify API
+- Feature-based music recommendations
+- CSV upload/download functionality
+- Interactive recommendation interface
+
+## Setup
+1. Clone repository
+2. Install dependencies: `npm install`
+3. Create `.env` file with Spotify API credentials
+4. Run server: `node server.js`
+5. Open `http://localhost:8000`
+
+## Research
+This tool is designed for academic research on music and nostalgia.
