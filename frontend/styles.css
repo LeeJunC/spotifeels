@@ -1,0 +1,58 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333
+}
+
+p {
+    color: #666
+}
+
+button {
+    background-color: #0099ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.btn.dropdown-toggle  {
+    width:150px;
+    text-align:left;
+}
+
+span.caret {
+    position: absolute;
+    left: 90%;
+    top: 45%;
+}
+
+label {
+    padding-top:5px;
+}
+
+.form-label {
+    padding-left:0px !important;
+}
+
+img {
+    width:140px;
+    height:140px;
+}
+
+.btn-success {
+    background-color: #3b7d4a!important;
+}
+
+.btn-success:hover {
+    background-color: #4daf64!important;
+}
+
+img.track {
+    border: 1px solid #8a8a8a;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyAPI WebProject v2</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h1>SpotifyAPI WebProject v2</h1>
+    <p>Sarah Hennessey's Nostalgia Study in the USC Brain and Music Lab</p>
+    <button id="myButton">Click me</button>
+
+    <div class="container">
+        <form action="">
+            <input type="hidden" id="hidden_token">
+            
+            <!-- Login -->
+            <div class="col-sm-6 row form-group px-0">
+                <button type="check" id="btn_login" class="btn btn-success col-sm-12">Login</button>
+            </div>
+
+
+            <!-- Song & Artist Input -->
+            <div class="col-sm-6 form-group row mt-4 px-0">
+                <label for="Song1" class="form-label col-sm-2">Song1:</label>
+                <input type="text" id="input_song1" class="form-control form-control-sm col-sm-10" placeholder="Enter a song">
+            </div>
+            <div class="col-sm-6 form-group row px-0">
+                <label for="Artist1" class="form-label col-sm-2">Artist1:</label>
+                <input type="text" id="input_artist1" class="form-control form-control-sm col-sm-10" placeholder="Enter an artist">
+            </div>
+
+            <div class="col-sm-6 row form-group px-0">
+                <button type="check" id="btn_check1" class="btn btn-success col-sm-12">Check</button>
+            </div>
+
+            <!-- Delta Inputs -->
+            <div class="col-sm-6 form-group row mt-4 px-0">
+                <label for="delta_energy" class="form-label col-sm-2">Delta Energy:</label>
+                <input type="range" step="0.01" id="delta_energy" class="form-control form-control-sm col-sm-10" placeholder="Enter a decimal number" min="0.1" max="0.2" oninput="document.getElementById('deltaEnergyOutput').value = delta_energy.value">
+                <output id="deltaEnergyOutput" class="col-sm-2 offset-sm-2 mt-2">0.15</output>
+            </div>
+            
+            <div class="col-sm-6 form-group row mt-4 px-0">
+                <label for="delta_valence" class="form-label col-sm-2">Delta Valence:</label>
+                <input type="range" step="0.01" id="delta_valence" class="form-control form-control-sm col-sm-10" placeholder="Enter a decimal number" min="0.1" max="0.2" oninput="document.getElementById('deltaValenceOutput').value = delta_valence.value">
+                <output id="deltaValenceOutput" class="col-sm-2 offset-sm-2 mt-2">0.15</output>
+            </div>
+
+            <div class="col-sm-6 form-group row mt-4 px-0">
+                <label for="fileInput" class="form-label col-sm-2">Upload File:</label>
+                <input type="file" id="input_file" class="form-control form-control-sm col-sm-10" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+            </div>
+
+            <div class="col-sm-6 row form-group px-0">
+                <button type="submit" id="upload_check" class="btn btn-success col-sm-12">Upload</button>
+            </div>
+
+            
+            <div class="col-sm-6 row form-group px-0">
+                <button type="submit" id="btn_submit" class="btn btn-success col-sm-12">Submit</button>
+            </div>
+        </form>
+        <div class = "col-sm-6 px-0", id="rec-download">
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6 px-0">
+                <div class="list-group rec-list">
+                    
+                </div>                                             
+            </div>
+
+
+            <div class="offset-md-1 col-sm-4" id="rec-detail">
+
+            </div>
+        </div>   
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
